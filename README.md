@@ -183,8 +183,8 @@ This project can serve as a foundation for:
 - Learning relational data handling with PHP and SQL  
 
 It’s a lightweight, easy-to-understand example of **modern procedural PHP** and can be expanded with:
-- 📄 Pagination and search filters  
-- 📑 CSV/PDF export  
-- 🔐 Role-based permissions  
-- 🌐 REST API endpoints  
+- Pagination and search filters  
+- CSV/PDF export  
+- Role-based permissions  
+- REST API endpoints  
 
