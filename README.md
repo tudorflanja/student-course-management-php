@@ -1,22 +1,22 @@
-# 🧮 PHP + MySQL Student–Course Management System
+# PHP + MySQL Student–Course Management System
 
 This web-based project implements a relational database management system built using **PHP** and **MySQL**.  
 It allows users to manage students, courses, and their enrollments through a clean and functional CRUD interface, demonstrating the use of **foreign keys**, **relational integrity**, and **cascade delete operations**.
 
 ---
 
-## 🚀 Features
+## Features
 
-- 📋 **Full CRUD Functionality** – Create, read, update, and delete records for students, courses, and enrollments  
-- 🔗 **Relational Database Design** – Implements one-to-many relationships between parent and child tables  
-- 💣 **Cascade Deletion** – Automatically deletes related enrollments when a student or course is removed  
-- 🔍 **Search and Filter** – Quickly find records using name or email filters  
-- 🔐 **User Authentication (Optional)** – Login system using sessions and hashed passwords  
-- 🎨 **Responsive Layout** – Simple, readable interface with reusable components (header, footer, navigation)
+- **Full CRUD Functionality** – Create, read, update, and delete records for students, courses, and enrollments  
+- **Relational Database Design** – Implements one-to-many relationships between parent and child tables  
+- **Cascade Deletion** – Automatically deletes related enrollments when a student or course is removed  
+- **Search and Filter** – Quickly find records using name or email filters  
+- **User Authentication (Optional)** – Login system using sessions and hashed passwords  
+- **Responsive Layout** – Simple, readable interface with reusable components (header, footer, navigation)
 
 ---
 
-## 🧰 Technologies Used
+## Technologies Used
 
 - **PHP 8.x** – Server-side scripting and business logic  
 - **MySQL 5.7+** – Relational database system  
@@ -27,7 +27,7 @@ It allows users to manage students, courses, and their enrollments through a cle
 
 ---
 
-## 🛠️ Application Overview
+## Application Overview
 
 The application provides a modular structure consisting of three main entities:
 
@@ -39,20 +39,20 @@ The `enrollments` table ensures that deleting a student or course automatically 
 
 ---
 
-## 💻 How It Works
+## How It Works
 
 1. The user logs in with the default credentials (`admin / admin123`).  
 2. Through the navigation bar, they can manage:
-   - 🧑‍🎓 **Students** – Add, edit, delete, and search for student data  
-   - 📘 **Courses** – Create or modify course information and instructors  
-   - 🔗 **Enrollments** – Link a student to one or more courses  
+   - **Students** – Add, edit, delete, and search for student data  
+   - **Courses** – Create or modify course information and instructors  
+   - **Enrollments** – Link a student to one or more courses  
 3. All data is handled securely via prepared SQL statements using PDO.  
 4. Cascade deletion maintains relational consistency automatically.  
 5. The session-based authentication system protects all CRUD operations.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 - `assets/` – Contains CSS styling for layout and UI elements
 - `courses/` – CRUD operations for courses
@@ -69,7 +69,7 @@ The `enrollments` table ensures that deleting a student or course automatically 
 
 ---
 
-## ▶️ How to Run the Project
+## How to Run the Project
 
 You can run the application locally using **XAMPP** or deploy it on a web server.
 
@@ -114,7 +114,7 @@ You can run the application locally using **XAMPP** or deploy it on a web server
 
 ---
 
-## 🗄️ Database Schema
+## Database Schema
 
 The database consists of three related tables:
 
@@ -152,7 +152,7 @@ UNIQUE KEY uq_student_course (student_id, course_id)
 
 ---
 
-## 🔐 Authentication System
+## Authentication System
 
 - Passwords are stored securely using PHP’s built-in `password_hash()` function.  
 - Users log in via `login.php`, and session variables are used to restrict access.  
@@ -161,7 +161,7 @@ UNIQUE KEY uq_student_course (student_id, course_id)
 
 ---
 
-## 💡 Key Concepts Demonstrated
+## Key Concepts Demonstrated
 
 - **Relational Database Design** (Parent–Child relationships)  
 - **Foreign Keys and Cascade Operations**  
@@ -172,15 +172,15 @@ UNIQUE KEY uq_student_course (student_id, course_id)
 
 ---
 
-## 📝 Conclusion
+## Conclusion
 
 The **PHP + MySQL Student–Course Management System** demonstrates the core principles of database-driven web applications.  
 It highlights CRUD functionality, secure authentication, and data integrity through relational modeling.  
 
 This project can serve as a foundation for:
-- 🎓 Academic management systems  
-- 🏫 Small-scale CMS or training portals  
-- 🧠 Learning relational data handling with PHP and SQL  
+- Academic management systems  
+- Small-scale CMS or training portals  
+- Learning relational data handling with PHP and SQL  
 
 It’s a lightweight, easy-to-understand example of **modern procedural PHP** and can be expanded with:
 - 📄 Pagination and search filters  
